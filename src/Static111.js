@@ -3,7 +3,7 @@ import "./App.css"
 
 
 const Static111 = () => {
-    const videoSource = "https://vod-progressive.akamaized.net/exp=1601352450~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F4745%2F14%2F373726378%2F1555251782.mp4~hmac=08ed05bb7d3dbad9e85d7fc1d3a8a63e7be2ab0826dda5387c260fc0505556a8/vimeo-prod-skyfire-std-us/01/4745/14/373726378/1555251782.mp4"
+    const videoSource = "https://player.vimeo.com/external/373726378.sd.mp4?s=50634dd00373643db4095f5fc27ff5a06887ec22&profile_id=139&oauth2_token_id=57447761"
     return (
         <div className="vidcontainer">
             <video autoPlay="autoplay" loop="loop" muted className="video">

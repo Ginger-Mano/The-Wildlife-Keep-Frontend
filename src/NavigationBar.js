@@ -25,7 +25,7 @@ class NavigationBar extends Component {
      showFixedMenu = () => this.setState({ fixed: true })
   
     render() {  
-      
+        console.log(this.props);
          const { children } = this.props
         const { fixed } = this.state
       return    <div className="nav"> <Visibility
@@ -57,7 +57,7 @@ class NavigationBar extends Component {
          <Modal closeIcon trigger= {<Button icon color="black" inverted={!fixed} style={{ marginLeft: '0.5em'}}>
          Sign Up
           </Button>}>
-          <UserProfile setCurrentUser={this.props.setCurrentUser}/>
+          <UserProfile handleSubmit={this.props.handleSubmit} handleChange={this.props.handleChange} setCurrentUser={this.props.setCurrentUser}/>
        </Modal>
       
 

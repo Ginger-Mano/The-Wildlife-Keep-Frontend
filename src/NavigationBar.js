@@ -8,7 +8,8 @@ import {Form, Modal} from "semantic-ui-react"
      Button,
      Container,
      Menu,
-     Visibility
+     Visibility,
+     Icon
    } from 'semantic-ui-react'
 
 
@@ -31,7 +32,7 @@ class NavigationBar extends Component {
      once={false}
      onBottomPassed={this.showFixedMenu}
      onBottomPassedReverse={this.hideFixedMenu}
-   ><Menu
+   ><Menu color="black"
      fixed={fixed ? 'top' : null}
      inverted={!fixed}
      pointing={!fixed}
@@ -40,7 +41,7 @@ class NavigationBar extends Component {
    >
       <Container>
      
-     <Menu.Item as='a' active>
+     <Menu.Item  as='a' active>
        <NavLink to='/'>Home</NavLink>
      </Menu.Item>
    
@@ -49,14 +50,14 @@ class NavigationBar extends Component {
      <Menu.Item as='a'>Tribe</Menu.Item>
      <Menu.Item position='right'>
 
-       <Button as='a' inverted={!fixed}>
+       <Button as='a' color="black" inverted={!fixed}>
          Log in
        </Button>
 
-         <Modal closeIcon trigger= {<Button  inverted={!fixed} primary={fixed} style={{ marginLeft: '0.5em' }}>
+         <Modal closeIcon trigger= {<Button icon color="black" inverted={!fixed} style={{ marginLeft: '0.5em'}}>
          Sign Up
           </Button>}>
-          <UserProfile />
+          <UserProfile setCurrentUser={this.props.setCurrentUser}/>
        </Modal>
       
 

@@ -14,7 +14,9 @@ import {
     Visibility,
   } from 'semantic-ui-react'
 
+
 const Footer = () => {
+
     // return <footer>Footer</footer>
    return <Segment color="black" inverted vertical style={{ padding: '5em 0em' }}>
     <Container >

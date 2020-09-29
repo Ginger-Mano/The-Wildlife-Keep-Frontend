@@ -12,10 +12,18 @@ import Static11 from "./Static11"
 import useSound from 'use-sound'
 import UserProfile from "./UserProfile"
 import { render } from '@testing-library/react';
+import AnimalCardFalse from './AnimalCardFalse';
 
 class App extends Component {
     state = {
-      login: false
+      login: false,
+      user: {}
+    }
+
+  setCurrentUser = (userObj) => {
+      this.setState({
+        user: userObj
+      })
     }
 
   render() {
@@ -23,15 +31,14 @@ class App extends Component {
   return (
    
     <div className="App">
-      <NavigationBar />
-      {/* <Static1 />   */}
-      {/* <Static11 /> */}
+      <NavigationBar setCurrentUser={this.setCurrentUser} />
       <Switch>
   <Route exact path="/" render={ () => <MainComponent login={this.state.login}/>}/>
-      {/* <MainComponent login={this.state.login}/> */}
-      {/* <Route path="/userpage" render={ () => <UserPage />}/> */}
+  {/* <Route exact path="/endanimals" render={ () => <AnimalCardFalse />}/> */}
+     
+      <Route path="/userpage" render={ () => <UserPage user={this.state.user}/>}/>
       </Switch>
-       {/* <Static2vid />   */}
+     
       <Footer />
     </div>
   

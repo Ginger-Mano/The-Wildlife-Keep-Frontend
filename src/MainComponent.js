@@ -2,8 +2,9 @@ import React, {Component} from "react"
 import WatchList from "./WatchList"
 import EndangeredAnimals from "./EndangeredAnimals"
 import Static1 from "./Static1"
+import Static111 from "./Static111"
 import Static2vid from './Static2vid';
-import Static11 from "./Static11"
+// import Static11 from "./Static11"
 import UserProfile from "./UserProfile"
 import {Route} from 'react-router-dom'
 import {Grid, Card} from "semantic-ui-react" 
@@ -76,7 +77,8 @@ class MainComponent extends Component {
         // console.log(this.state.watchAnimals)
         return(
           <div>
-          {/* <Static1 /> */}
+          <Static1 />
+          <Static111 />
           {/* <Static11 /> */}
             <div className="mainback">
             
@@ -90,7 +92,7 @@ class MainComponent extends Component {
                      <WatchList watchAnimals={this.state.watchAnimals} removeAnimal={this.removeAnimal}/>   
             {/* </Grid.Column>  */}
 
-            {/* <Static2vid /> */}
+            <Static2vid />
             </div> 
             </div>  
         

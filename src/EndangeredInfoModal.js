@@ -15,10 +15,10 @@ const EndangeredInfoModal = (props) => {
     >
       <Modal.Header >The {props.animal.name}</Modal.Header>
       <Modal.Content image scrolling>
-        <Image size='large' src={props.animal.image.url} wrapped />
+        <Image size="large" src={props.animal.image.url} wrapped />
 
         <Modal.Description>
-        <Image
+        <Image className="animalModalImg"
             src={props.animal.image.url}
             style={{ marginBottom: 10 }}
           />

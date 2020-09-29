@@ -10,6 +10,7 @@ class UserProfile extends Component {
         name: "",
         age: "",
         location: "",
+       
     }
 
     // componentDidMount() {
@@ -57,6 +58,7 @@ handleSubmit = (evt) => {
       .then(res => res.json())
       .then(newUserObj => {
           this.newUserState(newUserObj)
+          this.props.setCurrentUser(newUserObj)
       } )
       this.setState({
           name: "",
@@ -110,9 +112,9 @@ deleteUser = (userId) => {
           <Form.Button>Submit Form</Form.Button>
         </Form>
         {/* </Modal> */}
-         <div>
-             {newUserMapped}
-         </div>
+         {/* <div> */}
+             {/* {newUserMapped} */}
+         {/* </div> */}
              </div>
             // </Route>
         )

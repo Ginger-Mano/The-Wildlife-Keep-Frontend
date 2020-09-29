@@ -17,7 +17,7 @@ class WatchList extends Component {
         <AnimalCard animal={animal} removeAnimal={this.props.removeAnimal}/>)
         
         return(    
-        <div>
+        <div className="watchlistmain">
         <br></br>
         {/* <Route path="/wildlife-keep/userprofile">
         <UserProfile /><br></br>

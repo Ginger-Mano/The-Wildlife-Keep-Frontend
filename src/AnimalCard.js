@@ -33,8 +33,8 @@ removeWatchAnimal = (evt) => {
         <Image className="animalImage" src={this.props.animal.image.url} padded></Image>
 
         <EndangeredInfoModal animal={this.props.animal} />
-
-        <Icon onClick={this.props.addAnimalToWatchList ? this.handleAddToWatch : this.removeWatchAnimal} link name={this.props.addAnimalToWatchList ? 'heart' : 'trash' }/>
+        <br></br>
+        <Icon color="red" size="large" onClick={this.props.addAnimalToWatchList ? this.handleAddToWatch : this.removeWatchAnimal} link name={this.props.addAnimalToWatchList ? 'heart' : 'trash' }/>
         
     </Card>
     )

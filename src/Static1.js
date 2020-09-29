@@ -8,7 +8,7 @@ const Static1 = () => {
     return <div className="type">
       <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
       <Typewriter onInit={(typewriter) => {
-      typewriter.typeString('Welcome to <span style="color: red;">The Wildlife Keep</span>.')
+      typewriter.typeString('Welcome to <span style="color: brown;">The Wildlife Keep</span>.')
         .callFunction(() => {
           // console.log('String typed out!');
         })

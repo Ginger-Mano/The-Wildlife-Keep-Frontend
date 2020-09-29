@@ -57,7 +57,7 @@ class NavigationBar extends Component {
          <Modal closeIcon trigger= {<Button icon color="black" inverted={!fixed} style={{ marginLeft: '0.5em'}}>
          Sign Up
           </Button>}>
-          <UserProfile handleSubmit={this.props.handleSubmit} handleChange={this.props.handleChange} setCurrentUser={this.props.setCurrentUser}/>
+          <UserProfile setCurrentUser={this.props.setCurrentUser}/>
        </Modal>
       
 

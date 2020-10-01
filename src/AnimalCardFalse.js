@@ -24,11 +24,10 @@ removeWatchAnimal = (evt) => {
   }
 
     render() {
-        // console.log(this.props);
-        // let renderFirstThree = this.props.login ? eachAnimal : eachAnimal.slice(0, 3)
+        console.log(this.props.animal);
     return(
-      // <Route path="/wildlife-keep/endanimals">
-    <Card>
+      <div className="animalmain">
+      <Card>
         
         {/* 8. Add in the ternary statement for the conditional rendering */}
         <h2 onClick={this.handleInfoModalClick}>{this.props.animal.name}</h2>
@@ -36,10 +35,10 @@ removeWatchAnimal = (evt) => {
 
         <EndangeredInfoModal animal={this.props.animal} />
 
-        <Icon onClick={this.props.addAnimalToWatchList ? this.handleAddToWatch : this.removeWatchAnimal} link name={this.props.addAnimalToWatchList ? 'heart' : 'trash' }/>
+        {/* <Icon onClick={this.props.addAnimalToWatchList ? this.handleAddToWatch : this.removeWatchAnimal} link name={this.props.addAnimalToWatchList ? 'heart' : 'trash' }/> */}
         
     </Card>
-    // </Route>  
+    </div>
     )
     }
 }

@@ -1,5 +1,4 @@
 import React, {Component} from "react"
-import UserProfile from "./UserProfile"
 import AnimalCard from "./AnimalCard"
 import {Route} from 'react-router-dom'
 import { Card } from "semantic-ui-react"
@@ -19,12 +18,11 @@ class WatchList extends Component {
         return(    
         <div className="watchlistmain">
         <br></br>
-        {/* <Route path="/wildlife-keep/userprofile">
-        <UserProfile /><br></br>
-        </Route> */}
-        <h1 className="watch">WatchList</h1>    
+       
+        <h1 className="watch">Your WatchList</h1>    
         <h3>Here are your animals: </h3><br></br>
-        <Card.Group centered itemsPerRow={4}>
+
+        <Card.Group centered itemsPerRow={1}>
         {watchListArr}
         </Card.Group>
         </div>

@@ -11,7 +11,7 @@ function UserDeleteModal1(props) {
       onOpen={() => setOpen(true)}
       open={open}
       size='small'
-      trigger={<Button>Delete Profile</Button>}
+      trigger={<Button color='black'>Delete Profile</Button>}
     >
       <Header icon>
         <Icon name='archive' />

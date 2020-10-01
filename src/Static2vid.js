@@ -3,7 +3,9 @@ import "./App.css"
 
 
 const Static2vid = () => {
-    const videoSource = "https://cdn.videvo.net/videvo_files/video/free/2019-04/small_watermarked/190408_01_Alaska_Landscapes1_09_preview.webm"
+    // const videoSource = "https://cdn.videvo.net/videvo_files/video/free/2019-04/small_watermarked/190408_01_Alaska_Landscapes1_09_preview.webm"
+
+    const videoSource = "https://player.vimeo.com/external/224857514.sd.mp4?s=e15c874a62ce416f9d62c45efac3d7f011dda5ac&profile_id=164"
     return (
         <div className="vidcontainer">
             <video autoPlay="autoplay" loop="loop" muted className="video">

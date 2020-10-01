@@ -1,6 +1,16 @@
 /* .App {
   text-align: center;
 } */
+/* font-family: 'David Libre', serif;
+font-family: 'Lora', serif;
+font-family: 'Open Sans', sans-serif; */
+/* .endtag {
+  font-family: 'Lora', serif;
+  color: black !important;
+  background-color: yellow !important;
+  font-size: 30px !important;
+  text-align: center !important
+} */
 .watch {
   text-align: center;
 }
@@ -67,6 +77,7 @@
   box-shadow: 200px 200px 50px 10px black inset ; 
 }
 
+
 .seeMore {
   background-color: indigo;
 }
@@ -92,6 +103,7 @@
   font-weight: bold;
 }
 .animalcard {
+
   margin: 50px;
 }
 .footer {
@@ -110,4 +122,39 @@
   height: 400px;
   width: 720px;
   
+}
+.newusermain {
+  padding: 30px;
+}
+.userinfo {
+  background-color:bisque;
+  text-align: center;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url('https://cdn.pixabay.com/photo/2019/08/27/19/08/mushrooms-4434962_1280.jpg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.otherdiv {
+  height: 10px;
+  background-color: red;
+  font-size: larger;
+}
+.aboutpic {
+  width: 100%;
+}
+/* .watchdiv {
+  background-color: azure;
+} */
+.userpage {
+  background-color: beige;
 }

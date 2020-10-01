@@ -1,7 +1,7 @@
 import React, {Component} from "react"
 import AnimalCard from "./AnimalCard"
 import AnimalCardFalse from "./AnimalCardFalse"
-import {Grid, Card, Button, Icon, Divider} from "semantic-ui-react" 
+import {Grid, Card, Button, Icon, Label, Divider} from "semantic-ui-react" 
 import SearchAnimal from "./SearchAnimal"
 import { render } from "@testing-library/react"
 import {Link} from 'react-router-dom'
@@ -26,23 +26,21 @@ class EndangeredAnimals extends Component {
         }
 
     render() {
-        // console.log(this.props);
+        console.log(this.props.itemsPerRow);
     
         //5. Add addAnimalToWatchList as props to AnimalCard (Child)
         let endangeredAnimalCard = this.props.animals.map(animal => <AnimalCard key={animal.id} addAnimalToWatchList={this.props.addAnimalToWatchList} animal={animal} login={this.props.login}/>)
 
         // let endangeredAnimalCardFalse = this.props.animals.map(animal => <AnimalCardFalse key={animal.id} addAnimalToWatchList={this.props.addAnimalToWatchList} animal={animal} login={this.props.login}/>)
 
-        let renderFirstThree = this.state.seeAllAnimals ? endangeredAnimalCard : endangeredAnimalCard.slice(0, 6)
+        let renderFirstThree = this.state.seeAllAnimals ? endangeredAnimalCard : endangeredAnimalCard.slice(0, 8)
    
         return(
 
         <div className="animalmain">
-            {/* <SearchAnimal /> */}
             <br></br> <br></br>
-            <h1>EndangeredAnimals</h1>
-
-            <Card.Group centered itemsPerRow={3} padded>
+           
+            <Card.Group centered itemsPerRow={this.props.itemsPerRow} padded>
             {/* {endangeredAnimalCard} */}
             
             {renderFirstThree}
@@ -71,8 +69,10 @@ class EndangeredAnimals extends Component {
             <Icon name='arrow left' />
             </Button.Content>
             </Button> : "" }  
+            <br></br> 
 
-        </div>   
+        </div>  
+   
         )
     }
 }

@@ -1,4 +1,5 @@
 import React from "react"
+import {Link} from 'react-router-dom'
 import {
     Button,
     Container,
@@ -25,8 +26,8 @@ const Footer = () => {
           <Grid.Column width={3}>
             <Header inverted as='h4' content='About' />
             <List link inverted>
-              <List.Item as='a'>About The Wildlife Keep</List.Item>
-              <List.Item as='a'>Contact Us</List.Item>
+              <List.Item as='a'><Link to="/about">About The Wildlife Keep</Link></List.Item>
+              <List.Item as='a'><Link to="/contact">Contact Us</Link></List.Item>
             </List>
           </Grid.Column>
           <Grid.Column width={3}>
